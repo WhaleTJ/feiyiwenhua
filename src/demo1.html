@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>非遗留言板</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="../layui-v2.5.6/layui/css/layui.css" />
+		<style type="text/css">
+			#menu{
+				width: 1550px;
+				height: 1500px;
+				margin: 0 auto;
+				border: #000000 1px solid;
+			}
+			#sydh{
+				width: 100%;
+				height:3%;
+				border: #000000 1px solid;
+				margin: 15px;
+			}
+			#top{
+				width: 100%;
+				height: 10%;
+				border: hidden;
+				background-color: burlywood;
+			}
+			#content{
+				width: 80%;
+				height: 80%;
+				border: hidden;
+				margin: 20px 150px;
+			}
+			#left{
+				width: 15%;
+				height: 80%;
+				border: hidden;
+				float: left;
+			}
+			#center{
+				width:65%;
+				height: 95%;
+				border: whitesmoke 1px solid;
+				float: left;
+			}
+			#right{
+				width: 19%;
+				height: 80%;
+				background-color: burlywood;
+				float: left;
+				overflow: hidden;
+			}
+			#bottom{
+				width: 100%;
+				height: 4%;
+				border: #000000 1px solid;
+				float: left;
+			}
+			#ym{
+				width: 100%;
+				height: 4%;
+				border: hidden;
+				float: left;
+				padding-left: 560px;
+			}
+			.inner{
+				margin: 5px 50px 5px 120px;
+				float: left;
+			}
+			.bq{
+				float: left;
+				padding-top: 90px;
+				padding-left: 30px;
+			}
+			.pl{
+				float: left;
+				margin: 60px 300px;
+			}
+			.lbt{
+				width:calc(100%*3);
+				animation: lbt 9s ease-in-out infinite alternate;
+			}
+			.lbt img{
+				width: 230px;
+				height: 300px;
+				float: left;
+			}
+			@keyframes lbt{
+				0%,31%{
+					margin-left: 0;
+				}
+				43%,71%{
+					margin-left: -230px;
+				}
+				83%,100%{
+					margin-left: -460px;
+				}
+			}
+			.dh ul
+			{
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			}
+			.dh a:link,a:visited
+			{
+			display:block;
+			font-weight:bold;
+			color:black;
+			background-color:burlywood;
+			width:120px;
+			text-align:center;
+			padding:30px;
+			text-decoration:none;
+			text-transform:uppercase;
+			border: gainsboro 1px solid;
+			}
+			.dh a:hover,a:active
+			{
+			background-color: #8f352d;
+			}
+			.ht{
+				margin:20px  0;
+			}
+			.pj{
+				margin: 20px;
+			}
+			.pj p{
+				margin-top: 20px;
+				line-height: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+			<div id="sydh">
+				
+			</div>
+		<div id="top">
+			<div class="inner">
+				<h1>评论/留言</h1>
+				<br>
+				<p>message board</p>
+				<hr>
+			</div>
+			<div class="bq">
+			    <button type="button" class="layui-btn layui-btn-primary layui-btn-radius">戏&nbsp;&nbsp;曲</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-radius">手&nbsp;&nbsp;工</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-radius">书&nbsp;&nbsp;法</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-radius">口&nbsp;&nbsp;艺</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-radius">习&nbsp;&nbsp;俗</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-radius">文化</button>
+			</div>
+			<div class="pl">
+				<button type="button" class="layui-btn layui-btn-primary">发表评论</button>
+			</div>
+		</div>
+		<div id="content">
+		<div id="left">
+			<div class="dh">
+				<ul>
+				<li><a href="#home">最近热门</a></li>
+				<li><a href="#news">最新热点</a></li>
+				<li><a href="#contact">大家感兴趣</a></li>
+				</ul>
+			</div>
+			<div>
+				<p class="ht">热门话题</p>
+				<div>
+					<button type="button" class="layui-btn layui-btn-primary">京剧</button>
+					<br>
+					<br>
+					<button type="button" class="layui-btn layui-btn-primary">书法</button>
+					<br>
+					<br>
+					<button type="button" class="layui-btn layui-btn-primary">皮影戏</button>
+					<br>
+					<br>
+					<button type="button" class="layui-btn layui-btn-primary">手艺</button>
+				</div>
+				<script src="../layui-v2.5.6/layui/dist/layui.js" charset="utf-8"></script>
+			</div>
+		</div>
+		<div id="center">
+			<div class="layui-tab">
+			  <ul class="layui-tab-title">
+			    <li class="layui-this">全部留言</li>
+			    <li>我的留言</li>
+			  </ul>
+			  <div class="layui-tab-content">
+			    <div class="layui-tab-item layui-show">
+					<div class="pj">
+				<h2><a>对于戏剧的分析</a></h2>
+				<p>
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容。
+				</p>
+				<br>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" class="sc">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<hr>
+			</div>
+			<div class="pj">
+				<h2><a>对于书法的分析</a></h2>
+				<p>
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容。
+				</p>
+				<br>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" class="sc">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<hr>
+			</div>
+			<div class="pj">
+				<h2><a>论非遗文化</a></h2>
+				<p>
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容。
+				</p>
+				<br>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" class="sc">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<hr>
+			</div>
+			<div class="pj">
+				<h2><a>为什么要保护非遗</a></h2>
+				<p>
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容。
+				</p>
+				<br>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" class="sc">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<hr>
+			</div>
+			<div class="pj">
+				<h2><a>非遗的重要性</a></h2>
+				<p>
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容，
+				评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容评价分析内容。
+				</p>
+				<br>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" class="sc">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+					</button>
+				<hr>
+			</div>
+			
+			</div>
+			    <div class="layui-tab-item">
+				<div class="pj">
+				<h2><a>皮影戏交流</a></h2>
+				<p>交流内容</p>
+				<br>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+				</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+				</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+				</button>
+				<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					<i class="layui-icon">
+					</i>
+				</button>
+				<hr>
+			</div></div>
+			  </div>
+			</div>
+			<script src="../layui-v2.5.6/layui/layui.js" type="text/javascript" charset="UTF-8"></script>
+			<script>
+			layui.use('element', function(){
+			  var $ = layui.jquery
+			  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+			  
+			  //触发事件
+			  var active = {
+			    tabAdd: function(){
+			      //新增一个Tab项
+			      element.tabAdd('demo', {
+			        title: '新选项'+ (Math.random()*1000|0) //用于演示
+			        ,content: '内容'+ (Math.random()*1000|0)
+			        ,id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
+			      })
+			    }
+			    ,tabDelete: function(othis){
+			      //删除指定Tab项
+			      element.tabDelete('demo', '44'); //删除：“商品管理”
+			      
+			      
+			      othis.addClass('layui-btn-disabled');
+			    }
+			    ,tabChange: function(){
+			      //切换到指定Tab项
+			      element.tabChange('demo', '22'); //切换到：用户管理
+			    }
+			  };
+			  
+			  $('.site-demo-active').on('click', function(){
+			    var othis = $(this), type = othis.data('type');
+			    active[type] ? active[type].call(this, othis) : '';
+			  });
+			  
+			  //Hash地址的定位
+			  var layid = location.hash.replace(/^#test=/, '');
+			  element.tabChange('test', layid);
+			  
+			  element.on('tab(test)', function(elem){
+			    location.hash = 'test='+ $(this).attr('lay-id');
+			  });
+			  
+			});
+			</script>
+		</div>
+		<div id="right">
+			<div class="lbt">
+				<img src="../img/6.jpg"/>
+				<img src="../img/2.jpeg"/>
+				<img src="../img/7.jpg"/>
+			</div>
+			<div class="layui-collapse" lay-accordion="">
+			  <div class="layui-colla-item">
+			    <h2 class="layui-colla-title">非遗文化到底是什么？</h2>
+			    <div class="layui-colla-content layui-show">
+			      <p>非物质文化遗产，是根据联合国教科文组织的《保护非物质文化遗产公约》定义，非物质文化遗产指被各群体、团体、
+				  有时为个人所视为其文化遗产的各种实践、表演、表现形式、知识体系和技能及其有关的工具、实物、工艺品和文化场所。
+				  </p>
+			    </div>
+			  </div>
+			  <div class="layui-colla-item">
+			    <h2 class="layui-colla-title">为什么要保护非遗？</h2>
+			    <div class="layui-colla-content">
+			      商品经济使得产品的生产面向市场，面向利润。进而使得生产规模越来越大，生产方式越来越机械化，社会产品越来越多，
+				  但我们参与到其产生的过程却越来越少，这样导致我们对其投入的感情就越来越少。
+				</p>
+			  </div>
+			  <div class="layui-colla-item">
+			    <h2 class="layui-colla-title">如何宣传非遗？</h2>
+			    <div class="layui-colla-content">
+			      <p>近些年非遗相关的各种利好政策陆续出台，各种规模、类型的活动不断举办，各界对非遗的认知度大幅提升，成果显著。
+				  </p>
+				  </div>
+			  </div>
+			  <div class="layui-colla-item">
+			    <h2 class="layui-colla-title">传统手艺</h2>
+			    <div class="layui-colla-content">
+			      <p>1、铁画，也称铁花，安徽芜湖特产，为中国独具风格的工艺品之一。 2、安徽宣纸 中国蚕桑丝织技艺、福建南音、南京
+				  云锦、安徽宣纸、贵州侗族大歌、广东粤剧、《格萨尔》史诗、浙江龙泉青瓷、青海热贡艺术、藏戏、新疆《玛纳斯》、蒙古
+				  族呼麦、甘肃花儿、西安鼓乐、朝鲜族农乐舞、书法、篆刻、剪纸、雕版印刷、传统木结构营造技艺、端午节、妈祖信俗。
+				  </p>
+			    </div>
+			  </div>
+			</div>
+			<script>
+			layui.use(['element', 'layer'], function(){
+			  var element = layui.element;
+			  var layer = layui.layer;
+			  
+			  //监听折叠
+			  element.on('collapse(test)', function(data){
+			    layer.msg('展开状态：'+ data.show);
+			  });
+			});
+			</script>
+		</div>
+		</div>
+		</div>
+		<div id="ym">
+			<div id="demo1"></div>
+			<script>
+			layui.use(['laypage', 'layer'], function(){
+			  var laypage = layui.laypage
+			  ,layer = layui.layer;
+			  
+			  //总页数大于页码总数
+			  laypage.render({
+			    elem: 'demo1'
+			    ,count: 70 //数据总数
+			    ,jump: function(obj){
+			      console.log(obj)
+			    }
+			  });
+			  
+			  //调用分页
+			  laypage.render({
+			    elem: 'demo20'
+			    ,count: data.length
+			    ,jump: function(obj){
+			      //模拟渲染
+			      document.getElementById('biuuu_city_list').innerHTML = function(){
+			        var arr = []
+			        ,thisData = data.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
+			        layui.each(thisData, function(index, item){
+			          arr.push('<li>'+ item +'</li>');
+			        });
+			        return arr.join('');
+			      }();
+			    }
+			  });
+			  
+			});
+			</script>
+		</div>
+		<div id="bottom">
+			
+		</div>
+	</body>
+</html>
