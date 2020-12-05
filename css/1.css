@@ -1,0 +1,162 @@
+			#sou {
+							height: 1.8%;
+							background-color: #8f352d;
+							border: hidden;
+						}
+			
+						#sou li {
+							float: left;
+							margin: 0 0 0 2.4em;
+						}
+			
+						#sou ul {
+							list-style: none;
+							margin: 0;
+							padding: 0 95px;
+						}
+			
+						#sou a {
+							padding: 0 2em;
+							text-decoration: none;
+							background-color: #8f352d;
+							color: #FFF;
+							float: left;
+							line-height: 45px;
+							font-size: 18px;
+						}
+			
+						#sou a:hover {
+							background-color: #712620;
+						}
+			
+						#sou img {
+							width: 45px;
+							height: 45px;
+						}
+			
+			
+			
+			
+			#menu{
+				border: hidden;
+				height: 45px;
+				
+				background-color: #8f352d;
+			}
+		
+			
+			#mainsort2{
+				background-image: url(../img/bg2.png);
+				background-repeat: none;
+				background-size: 100% 100%;
+				border: hidden;
+				height:1800px;
+				width: 100%;
+				position: relative;
+			}
+			#intro{
+				
+				text-align: center;
+				border: hidden;
+				height: 550px;
+				width: 76%;
+				margin: 0 auto;
+				padding: 3% 4%;
+				line-height:150%;
+				font-size: 110%;
+				box-sizing:border-box;
+				
+			}
+			#detailmenu{
+				border: solid #aa55ff;
+				height: 1100px;
+				width: 76%;
+				margin: 0 12% 0 12%;
+			}
+			.searchmenu,select,input{
+				border: hidden;
+				height: 3.5%;
+				width: 17%;
+				float: left;
+				margin-top: 1%;
+				background-image: url(../img/border.png);
+				background-size: 100% 100%;
+				background-repeat: none;
+			}
+			
+			select{	
+				margin-left: 6%;
+				height: 40px;
+			}
+			.select2{
+				margin-left: 5%;
+			}
+			input{
+				margin-left: 5%;
+			}
+			button{
+				height: 3.5%;
+				width: 4%;
+				float: left;
+				margin-top: 1%;
+				margin-left: 1%;
+			}
+			
+			#search{
+				
+				border: hidden;
+				height: 3.5%;
+				width: 16%;
+				margin: 1% 0 0 3%;
+				float: left;
+				text-align: center;
+				background-image: url(../img/border.png);
+				background-size: 100% 100%;
+				background-repeat: none;
+			}
+			#detailsort{
+				background-image: url(../img/manu.jpg);
+				background-size: 100% 100%;
+				border: hidden;
+				width: 98%;
+				height: 6%;
+				float: left;
+				margin: 2% 1% 0.5% 1%;
+			}
+			.detail{
+				border: hidden;
+				width: 96%;
+				height: 76%;
+				float: left;
+				margin-left: 2%;
+			}
+			ul{
+				list-style-type:none;
+				font-size: 125%;
+			}
+			hr{
+				height:20px;
+				margin-right: 4%;
+				border:none;
+				border-top:1px solid #7d7d7d;
+			}
+			#pagination{
+				border: solid #0055ff;
+				width: 50%;
+				height: 4%;
+				float: left;
+				margin: 3% 25% 1% 25%;
+			}
+			#bottom{
+				border: hidden;
+				background-color: #8f352d;
+				height: 105px;
+				width: 100%;
+				text-align: center;
+				
+			}
+			
+			
+			
+			
+			
